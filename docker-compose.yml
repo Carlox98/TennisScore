@@ -6,8 +6,8 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./backend/data:/app/data
-      - ./backend/trained_models:/app/trained_models
+      - backend-data:/app/data
+      - backend-models:/app/trained_models
     environment:
       - PYTHONUNBUFFERED=1
 
@@ -19,3 +19,7 @@ services:
       - backend
     environment:
       - VITE_API_URL=http://localhost:8000/api
+
+volumes:
+  backend-data:
+  backend-models:

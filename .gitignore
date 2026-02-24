@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.env
+*.db
+
+# Data & models (downloaded at runtime)
+backend/data/*.csv
+backend/trained_models/*.pkl
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude
+.claude/
